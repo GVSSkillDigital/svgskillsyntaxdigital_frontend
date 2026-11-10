@@ -14,9 +14,16 @@ import { RouterLink } from '@angular/router';
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-lg transition">
           <div class="space-y-4">
-            <div class="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl font-bold">🎓</div>
             <h3 class="text-xl font-bold text-slate-900">Certification Bootcamps</h3>
-            <p class="text-slate-600 text-sm leading-relaxed">Live instructor-led training in Java 8, Spring Boot 2.7, MySQL 8, and Angular with real enterprise projects.</p>
+            <p class="text-slate-600 text-sm leading-relaxed">Our instructor‑led bootcamps are designed for aspiring developers and professionals who want to master enterprise technologies through hands‑on experience.
+              We offer structured programs in:</p>
+            <ul class="whatweoffer-list">
+              <li><b>Backend Development:</b> Java 8, Spring Boot, .NET Core, and Microservices</li>
+              <li><b>Frontend Development:</b> Angular, TypeScript, and modern UI frameworks</li>
+              <li><b>Cloud & DevOps:</b> Azure, Docker, Kubernetes, and CI/CD pipelines</li>
+              <li><b>Data Engineering:</b> Python, SQL, and ETL automation</li>
+              <li><b>Quality Assurance:</b> Manual and Selenium‑based automation testing</li>
+            </ul>
           </div>
           <div class="pt-8">
             <a routerLink="/courses" class="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl text-xs block text-center shadow-md transition">Browse Catalog</a>
@@ -25,23 +32,35 @@ import { RouterLink } from '@angular/router';
 
         <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-lg transition">
           <div class="space-y-4">
-            <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl font-bold">🏢</div>
             <h3 class="text-xl font-bold text-slate-900">Corporate Upskilling</h3>
-            <p class="text-slate-600 text-sm leading-relaxed">Customized enterprise curriculum for software development teams migrating legacy monoliths to Spring Boot microservices.</p>
+            <p class="text-slate-600 text-sm leading-relaxed">We provide customized training solutions for software development teams transitioning from legacy systems to modern architectures.
+              Our corporate programs include:</p>
+            <ul class="whatweoffer-list">
+              <li>Tailored curriculum for your tech stack</li>
+              <li>virtual workshops</li>
+              <li>Real‑world project simulations</li>
+              <li>Post‑training support and mentoring</li>
+            </ul>
           </div>
           <div class="pt-8">
-            <button (click)="alertCorp()" class="w-full py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl text-xs shadow-md transition">Inquire for Teams</button>
+            <a routerLink="/courses" class="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl text-xs block text-center shadow-md transition">Browse Catalog</a>
           </div>
         </div>
 
         <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-lg transition">
           <div class="space-y-4">
-            <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl font-bold">💼</div>
-            <h3 class="text-xl font-bold text-slate-900">Placement Assistance</h3>
-            <p class="text-slate-600 text-sm leading-relaxed">Resume restructuring, mock technical interviews, and direct referrals to top tech hiring partners.</p>
+            <h3 class="text-xl font-bold text-slate-900">Real‑Time Project Training</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">Our project‑based learning approach lets students work on live enterprise projects guided by industry mentors.
+              You’ll gain exposure to:</p>
+            <ul class="whatweoffer-list">
+              <li>Agile development workflows</li>
+              <li>Version control and CI/CD pipelines</li>
+              <li>API integration and deployment</li>
+              <li>Debugging and performance optimization</li>
+            </ul>
           </div>
           <div class="pt-8">
-            <a routerLink="/register" class="w-full py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold rounded-xl text-xs block text-center shadow-md transition">Get Career Support</a>
+            <a routerLink="/register" class="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl text-xs block text-center shadow-md transition">Get Career Support</a>
           </div>
         </div>
       </div>

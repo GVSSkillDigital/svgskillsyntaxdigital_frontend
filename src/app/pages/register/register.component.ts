@@ -11,7 +11,6 @@ import { TrainingService, Course } from '../../services/training.service';
     <div class="py-20 max-w-xl mx-auto px-6">
       <div class="text-center mb-10 space-y-2">
         <h1 class="text-3xl font-black text-slate-900 tracking-tight">Student Registration Form</h1>
-        <p class="text-slate-600 text-sm">Secure your seat in our upcoming batch. Saved directly to MySQL via Spring Boot.</p>
       </div>
 
       @if (submitted()) {
@@ -34,22 +33,33 @@ import { TrainingService, Course } from '../../services/training.service';
             </div>
             <div>
               <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Phone *</label>
-              <input formControlName="phone" class="w-full px-4 py-3 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:border-indigo-600 bg-slate-50/50" placeholder="+1 555-0199" />
+              <input formControlName="phone" class="w-full px-4 py-3 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:border-indigo-600 bg-slate-50/50" placeholder="+91 9835463773" />
             </div>
           </div>
           <div>
             <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Select Course *</label>
             <select formControlName="courseCode" class="w-full px-4 py-3 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:border-indigo-600 bg-slate-50/50">
               @for (c of courses(); track c.id) {
-                <option [value]="c.code">{{ c.title }} ({{ c.fee }})</option>
+                <option [value]="c.code">{{ c.title }}</option>
               }
             </select>
           </div>
           <div>
-            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Payment Method</label>
-            <select formControlName="paymentMethod" class="w-full px-4 py-3 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:border-indigo-600 bg-slate-50/50">
-              <option value="Online Credit Card">Online Credit Card</option>
-              <option value="Installment EMI">Installment EMI</option>
+            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Degree</label>
+            <select formControlName="studentGraduate" class="w-full px-4 py-3 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:border-indigo-600 bg-slate-50/50">
+              <option value="Online Credit Card">B.Tech</option>
+              <option value="Installment EMI">B.E</option>
+              <option value="Installment EMI">B.Sc</option>
+              <option value="Installment EMI">B.Com</option>
+              <option value="Installment EMI">BBA</option>
+              <option value="Installment EMI">BA</option>
+              <option value="Installment EMI">M.Tech</option>
+              <option value="Installment EMI">M.E</option>
+              <option value="Installment EMI">MBA</option>
+              <option value="Installment EMI">MCA</option>
+              <option value="Installment EMI">M.Sc</option>
+              <option value="Installment EMI">MA</option>
+              <option value="Installment EMI">Ph.D</option>
             </select>
           </div>
           <button type="submit" [disabled]="form.invalid" class="w-full py-4 bg-amber-500 hover:bg-amber-600 disabled:opacity-50 text-slate-950 font-extrabold rounded-2xl text-sm shadow-lg transition transform hover:-translate-y-0.5">

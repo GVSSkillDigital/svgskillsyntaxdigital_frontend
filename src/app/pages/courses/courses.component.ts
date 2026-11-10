@@ -24,7 +24,6 @@ import { TrainingService, Course } from '../../services/training.service';
               <p class="text-xs text-slate-600 leading-relaxed mb-6">{{ c.description }}</p>
             </div>
             <div class="pt-6 border-t border-slate-100 flex justify-between items-center">
-              <span class="text-xl font-black text-slate-900">{{ c.fee }}</span>
               <a [routerLink]="['/register']" [queryParams]="{code: c.code}" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold rounded-xl shadow-md transition">Enroll Now</a>
             </div>
           </div>

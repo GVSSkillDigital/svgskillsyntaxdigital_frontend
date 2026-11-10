@@ -1,3 +1,100 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.logo img.logo {
+    width: 15%;
+}
+.nav a {
+    margin: 0px;
+    padding: 8px;
+    border: 1px solid #228bc4;
+    background-color: #228bc4;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+}
+a.px-4.py-2\.5.rounded-xl.text-sm.text-slate-600.hover\:text-slate-900.hover\:bg-slate-50.transition.bg-indigo-50.text-indigo-700.font-bold {
+    background-color: #1c5f86;
+    color: #fff;
+}
+.space-y-6 h1.text-4xl.sm\:text-6xl.font-black.tracking-tight.leading-tight {
+    font-size: 36px;
+    font-family: system-ui;
+}
+.flex.flex-col.sm\:flex-row.gap-4.pt-4 a {
+    margin: 0;
+    padding: 8px;
+    border-radius: 5px;
+    color: #333;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+.text-center.max-w-2xl.mx-auto.mb-16 h2 {
+    font-size: 26px !important;
+    font-family: system-ui;
+    color: #333;
+}
+.py-20 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.px-6 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.mb-16 {
+    margin-bottom: 2rem !important;
+}
+.gap-8 {
+    gap: 1rem !important;
+}
+.bg-white.border.border-slate-200\/80.rounded-3xl.p-8.flex.flex-col.justify-between.shadow-sm.hover\:shadow-xl.transition.duration-300 {
+    margin: 0;
+    padding: 18px !important;
+    background-color: #ffffff;
+    width: 100% !important;
+}
+.text-indigo-700 {
+    color: #fff !important;
+    background-color: #59a4f4 !important;
+    border-radius: 3px !important;
+    font-size: 11px !important;
+    font-family: system-ui !important;
+}
+.text-slate-900 {
+    color: #666 !important;
+    font-size: 18px !important;
+    font-family: system-ui !important;
+    font-weight: 500 !important;
+}
+.bg-indigo-600 {
+    background-color: #228bc4 !important;
+}
+button.px-6.py-3.bg-indigo-600.text-white.rounded-xl.text-xs.font-bold.shadow-md {
+    padding: 10px !important;
+}
+button.w-full.py-4.bg-amber-500.hover\:bg-amber-600.disabled\:opacity-50.text-slate-950.font-extrabold.rounded-2xl.text-sm.shadow-lg.transition.transform.hover\:-translate-y-0\.5 {
+    background-color: #0a90ec !important;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: system-ui;
+}
+.mb-10 {
+    margin-bottom: 1rem !important;
+}
+ul.whatweoffer-list li {
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+}
+.max-w-7xl.mx-auto.px-6.pt-8.border-t.border-slate-900.text-center.text-xs.text-slate-500 {
+    margin-left: 123px !important;
+    padding: 0 !important;
+}
+.py-16 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}

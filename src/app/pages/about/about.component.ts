@@ -5,24 +5,32 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `
     <div class="py-20 max-w-5xl mx-auto px-6">
-      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-        <span class="text-xs font-bold uppercase tracking-widest text-indigo-600 bg-indigo-50 px-4 py-1.5 rounded-full">About GVDigitalTrainings</span>
-        <h1 class="text-4xl font-black text-slate-900 tracking-tight">Engineering Excellence Through Practical Microservices</h1>
-        <p class="text-slate-600 text-base leading-relaxed">
-          Founded by enterprise architects, GVDigitalTrainings provides rigorous, production-grade learning experiences bridging academia and corporate software development.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+      <div class="grid grid-cols-1 md:grid-cols-1">
         <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-3">
-          <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center text-xl font-bold mb-4">🚀</div>
-          <h3 class="text-xl font-bold text-slate-900">Our Core Mission</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">To cultivate top-tier engineering talent proficient in Java 8 functional programming, Spring Boot frameworks, MySQL persistence, and Angular 17 client architectures.</p>
-        </div>
-        <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-3">
-          <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-xl font-bold mb-4">💻</div>
-          <h3 class="text-xl font-bold text-slate-900">Cloud Labs & MySQL Integration</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">Every student receives isolated cloud workspaces connected to live MySQL instances to practice database optimization, transaction management, and REST APIs.</p>
+          <h3 class="text-xl font-bold text-slate-900">Our Vision</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">At GVDigitalTrainings, we believe that education should empower individuals to build, innovate, and lead in the digital era. Our vision is to create a generation of skilled professionals who can transform ideas into scalable solutions using modern technologies.</p>
+          <h3 class="text-xl font-bold text-slate-900">Who We Are</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Founded by industry experts with decades of experience in software development and IT consulting, GVDigitalTrainings is a premier institute dedicated to hands‑on learning and career‑focused training.</p>
+          <p class="text-slate-600 text-sm leading-relaxed">We specialize in full‑stack development, cloud computing, data engineering, and software testing — equipping learners with the tools and confidence to excel in today’s competitive tech landscape.</p>
+          <h3 class="text-xl font-bold text-slate-900">What We Offer</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Our programs are designed to bridge the gap between academic theory and real‑world application:</p>
+          <ul class="whatweoffer-list">
+            <li><b>Backend Development:</b> Java 8, Spring Boot, .NET Core, and Microservices</li>
+            <li><b>Frontend Development:</b> Angular, TypeScript, and modern UI frameworks</li>
+            <li><b>Cloud & DevOps:</b> Azure, Docker, Kubernetes, and CI/CD pipelines</li>
+            <li><b>Data Engineering:</b> Python, SQL, and ETL automation</li>
+            <li><b>Quality Assurance:</b> Manual and Selenium‑based automation testing</li>
+          </ul>
+          <h3 class="text-xl font-bold text-slate-900">Our Approach</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">We follow a project‑based learning model where students work on real‑time enterprise applications.</p>
+          <p class="text-slate-600 text-sm leading-relaxed">Our trainers are certified professionals who bring their industry experience into every classroom, ensuring that every concept is backed by practical insight.</p>
+          <h3 class="text-xl font-bold text-slate-900">Why Choose Us</h3>
+          <ul class="whatweoffer-list">
+            <li>Expert trainers from top IT companies</li>
+            <li>Structured curriculum aligned with certification standards</li>
+            <li>Real‑time projects and placement assistance</li>
+            <li>Supportive learning environment with small batch sizes</li>
+          </ul>
         </div>
       </div>
     </div>
