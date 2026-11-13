@@ -32,9 +32,14 @@ import { TrainingService, Course } from '../../services/training.service';
               <input formControlName="email" type="email" class="w-full px-4 py-3 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:border-indigo-600 bg-slate-50/50" placeholder="john&#64;example.com" />
             </div>
             <div>
-              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Phone *</label>
-              <input formControlName="phone" class="w-full px-4 py-3 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:border-indigo-600 bg-slate-50/50" placeholder="+91 9835463773" />
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Password *</label>
+              <input formControlName="password" type="password" class="w-full px-4 py-3 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:border-indigo-600 bg-slate-50/50" placeholder="••••••••" />
             </div>
+
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Phone *</label>
+            <input formControlName="phone" class="w-full px-4 py-3 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:border-indigo-600 bg-slate-50/50" placeholder="+91 9835463773" />
           </div>
           <div>
             <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Select Course *</label>
