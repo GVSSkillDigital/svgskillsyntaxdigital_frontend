@@ -6,6 +6,8 @@ import { CoursesComponent } from './pages/courses/courses.component';
 import { BlogsComponent } from './pages/blogs/blogs.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { authGuard } from './guards/auth.guard';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,5 +17,6 @@ export const routes: Routes = [
   { path: 'blogs', component: BlogsComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'dashboard', component: DashboardComponent, canActivate: [authGuard] },
   { path: '**', redirectTo: '' }
 ];

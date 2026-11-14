@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.logo img.logo {
-    width: 15%;
-}
 .nav a {
     margin: 0px;
     padding: 8px;

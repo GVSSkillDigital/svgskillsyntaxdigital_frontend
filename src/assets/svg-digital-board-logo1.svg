@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="112" viewBox="0 0 520 112" fill="none" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">SVG DIGITAL BOARD</title>
+  <defs>
+    <linearGradient id="brand-gradient" x1="12" y1="12" x2="92" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="8" width="96" height="96" rx="26" fill="url(#brand-gradient)"/>
+  <path d="M25 67V43a7 7 0 0 1 7-7h14a7 7 0 0 1 7 7v24a7 7 0 0 1-7 7H32a7 7 0 0 1-7-7Z" stroke="#fff" stroke-width="6"/>
+  <path d="m41 61 10 10 21-25" stroke="#BFDBFE" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="76" cy="33" r="5" fill="#BFDBFE"/>
+  <text x="120" y="52" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="35" font-weight="800" letter-spacing="1.1">SVG DIGITAL</text>
+  <text x="122" y="86" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="5.6">BOARD</text>
+</svg>

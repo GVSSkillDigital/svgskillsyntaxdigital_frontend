@@ -1,6 +1,6 @@
 # GVS Digital Trainings Frontend
 
-The frontend for the GV Digital Trainings Institute website. It is a single-page application built with Angular 17 and TypeScript. The site includes home, about, services, courses, blogs, registration, and login pages.
+The frontend for the SVG Digital Board website. It is a single-page application built with Angular 17 and TypeScript. The site includes home, about, services, courses, blogs, registration, login, and student dashboard pages.
 
 ## Technology
 
@@ -59,7 +59,8 @@ npm.cmd start
 The frontend expects the training API at `http://localhost:8080/api` (configured in `src/app/services/training.service.ts`). It calls:
 
 - `GET /courses` to load course listings
-- `POST /register` to submit a student registration
+- `POST /auth/register` to submit a student registration with `fullName`, `email`, `password`, `phone`, `courseCode`, and `educationLevel`
+- `POST /auth/login` to authenticate with `email` and `password`; the returned access token and profile are kept in the current browser session
 
 Run the compatible backend separately and make sure it allows requests from the frontend origin (`http://localhost:4200`). The backend is not part of this frontend repository. The frontend server can start without it, but course data and registration require the API to be available. The API URL is currently hard-coded; no frontend `.env` file is used.
 
@@ -83,6 +84,8 @@ The Angular CLI writes build output under `dist/GVDigitalTrainings/`.
 | `/courses` | Courses (loads data from the backend API) |
 | `/blogs` | Blogs |
 | `/register` | Student registration (uses the backend API) |
+| `/login` | Student sign-in |
+| `/dashboard` | Authenticated student dashboard |
 | `/login` | Login |
 
 Unknown routes redirect to the home page.
