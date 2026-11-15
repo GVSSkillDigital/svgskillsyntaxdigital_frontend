@@ -1,13 +1,13 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, RouterLink],
   template: `
     <div class="py-24 flex justify-center px-6">
       <div class="bg-white p-10 rounded-3xl border border-slate-200 shadow-xl max-w-md w-full space-y-6">
@@ -31,6 +31,9 @@ import { AuthService } from '../../services/auth.service';
           <button type="submit" [disabled]="submitting()" class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 disabled:opacity-60 text-white font-extrabold rounded-2xl text-sm shadow-lg transition transform hover:-translate-y-0.5">
             {{ submitting() ? 'Signing in...' : 'Sign In' }}
           </button>
+          <div class="text-right">
+            <a routerLink="/forgot-password" class="text-sm font-semibold text-indigo-600 hover:text-indigo-700">Forgot Password?</a>
+          </div>
         </form>
       </div>
     </div>

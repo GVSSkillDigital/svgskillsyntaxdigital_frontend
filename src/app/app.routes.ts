@@ -8,6 +8,9 @@ import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { authGuard } from './guards/auth.guard';
+import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
+import { ResetPasswordComponent } from './pages/reset-password/reset-password.component';
+import { ConfirmCodeComponent } from './pages/confirm-code/confirm-code.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,6 +20,9 @@ export const routes: Routes = [
   { path: 'blogs', component: BlogsComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
+  { path: 'reset-password', component: ResetPasswordComponent },
+  { path: 'confirmcode', component: ConfirmCodeComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [authGuard] },
   { path: '**', redirectTo: '' }
 ];

@@ -7,6 +7,17 @@ export interface LoginRequest {
   password: string;
 }
 
+export interface PasswordResetRequest {
+  email: string;
+  password: string;
+  confirmPassword: string;
+}
+
+export interface ConfirmCodeRequest {
+  email: string;
+  code: string;
+}
+
 export interface AuthUser {
   id: number;
   email: string;
@@ -34,7 +45,7 @@ export interface LoginResponse {
 export class AuthService {
   private http = inject(HttpClient);
   private readonly storageKey = 'student-portal-auth';
-  private readonly apiUrl = 'http://localhost:8080/api';
+  private readonly apiUrl = '/api';
   private readonly currentUser = signal<AuthUser | null>(this.readStoredUser());
 
   user = this.currentUser.asReadonly();
@@ -46,6 +57,18 @@ export class AuthService {
         this.currentUser.set(response.user);
       })
     );
+  }
+
+  verifyEmail(email: string): Observable<boolean> {
+    return this.http.post<boolean>(`${this.apiUrl}/auth/verify-email-id`, email);
+  }
+
+  resetPassword(request: PasswordResetRequest): Observable<unknown> {
+    return this.http.post<unknown>(`${this.apiUrl}/auth/passwordreset`, request);
+  }
+
+  confirmPasswordReset(request: ConfirmCodeRequest): Observable<unknown> {
+    return this.http.post<unknown>(`${this.apiUrl}/auth/confirmcode`, request);
   }
 
   getAccessToken(): string | null {

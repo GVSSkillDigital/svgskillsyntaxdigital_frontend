@@ -31,7 +31,8 @@ export interface MessageResponse {
 })
 export class TrainingService {
   private http = inject(HttpClient);
-  private apiUrl = 'http://localhost:8080/api';
+  //private apiUrl = 'http://localhost:8080/api';
+  private apiUrl = '/api';
 
   getCourses(): Observable<Course[]> {
     return this.http.get<Course[]>(`${this.apiUrl}/courses`);
